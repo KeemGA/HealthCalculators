@@ -37,4 +37,13 @@ public class BmActivity extends AppCompatActivity
                          num1 = editText1.getText().toString();//키
                          num2 = editText2.getText().toString();//몸무게
                          num3 = editText3.getText().toString();//나
-                         resultDouble = 66.47 + (13.75 * Double.parseDouble(num2)) + (5 * Double.parseDouble(num1)) - (6.76 * Double.parseDouble(num3));            Toast.makeText(this,"기초 대사량은"+resultDouble.toString(), Toast.LENGTH_LONG).show();        }        else if (female.isChecked())        {            num1 = editText1.getText().toString();            resultDouble = 66.51 + (9.56 * Double.parseDouble(num2))                    + (1.85 * Double.parseDouble(num1))                    - (4.68 * Double.parseDouble(num3));            Toast.makeText(this,"기초 대사량은"+resultDouble.toString(), Toast.LENGTH_LONG).show();        }    }}
+                         resultDouble = 66.47 + (13.75 * Double.parseDouble(num2)) + (5 * Double.parseDouble(num1)) - (6.76 * Double.parseDouble(num3));
+                         Toast.makeText(this,"기초 대사량은"+resultDouble.toString(), Toast.LENGTH_LONG).show();
+              }
+              else if (female.isChecked())
+              {
+                          num1 = editText1.getText().toString();
+                          resultDouble = 66.51 + (9.56 * Double.parseDouble(num2)) + (1.85 * Double.parseDouble(num1)) - (4.68 * Double.parseDouble(num3));
+                          Toast.makeText(this,"기초 대사량은"+resultDouble.toString(), Toast.LENGTH_LONG).show();
+               }
+      }}
